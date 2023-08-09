@@ -28,7 +28,7 @@ int ExpTen(int n)
     int b = 10;
     while (i < n)
     {
-        b = b * 10;
+        b *= 10;
         i++;
     }
     return b;

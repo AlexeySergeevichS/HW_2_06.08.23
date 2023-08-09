@@ -12,5 +12,17 @@ string CheckDayOfWeek(int num)
 {
     return num==6||num==7 ? "Да":"Нет";
 }
+bool ValidDay(int n)
+{
+    if (n>0 && n<=7)
+    {
+        return true;
+    }
+    System.Console.WriteLine("Это не день недели");
+    return false;
+}
 int n= InputNumber("Введи день недели: ");
+if (ValidDay(n))
+{
 System.Console.WriteLine(CheckDayOfWeek(n));
+}

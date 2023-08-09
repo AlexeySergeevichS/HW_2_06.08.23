@@ -14,4 +14,9 @@ int SecondDigit(int num)
 }
 
 int number = InputNumber("Введи трехзначное число :");
+if (number<100||number>999)
+{
+    System.Console.WriteLine("Не трехзначное число число!!!");
+    return;
+}
 System.Console.WriteLine($"Вторая цифра {SecondDigit(number)}");
